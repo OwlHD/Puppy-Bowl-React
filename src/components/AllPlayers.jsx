@@ -2,7 +2,6 @@ import FetchAllPlayers from "../helpers/Utils"
 import PuppyCard from "./PuppyCard"
 import {useState, useEffect} from 'react'
 import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
@@ -55,11 +54,6 @@ export default function AllPlayers() {
                         <PuppyCard key={player.id} player={player}/>
                     )
                 }))
-                /* players.map((player)=>{
-                    return (
-                        <PuppyCard key={player.id} player={player}/>
-                    )
-                }) */
             }
             </Row>
         </div>

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 import { fetchSinglePlayer } from "../helpers/Utils"
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { SinglePuppyCard } from "./PuppyCard";
 
 export default function SinglePlayer() {
