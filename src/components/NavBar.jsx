@@ -1,6 +1,10 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import { Link } from 'react-router-dom'
 
 export default function NavBar() {
@@ -12,9 +16,23 @@ export default function NavBar() {
           <Nav className="me-auto">
             <Nav.Link as={Link} to='/' >Home</Nav.Link>
             <Nav.Link as={Link} to='/NewPlayerForm'>New Player Form</Nav.Link>
-            <Nav.Link as={Link} to='/players/:id'>Search</Nav.Link>
+            <Nav.Link as={Link} to='/Search'>Search</Nav.Link>
           </Nav>
         </Container>
+        <Form className='d-flex'>
+        <Row>
+          <Col xs="auto">
+            <Form.Control
+              type="text"
+              placeholder="Search"
+              className=" mr-sm-2"
+            />
+          </Col>
+          <Col xs="auto">
+            <Button type="submit">Submit</Button>
+          </Col>
+        </Row>
+      </Form>
       </Navbar>
     </>
   );
