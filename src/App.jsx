@@ -12,9 +12,9 @@ function App() {
       <div>
         <NavBar />
         <Routes>
-        <Route path='/' element={<AllPlayers />} />
-        <Route path='/players/:id' element={<SinglePlayer />} />
-        <Route path='/NewPlayerForm' element={<NewPlayerForm />} />
+        <Route path='/Puppy-Bowl-React/' element={<AllPlayers />} />
+        <Route path='/Puppy-Bowl-React/players/:id' element={<SinglePlayer />} />
+        <Route path='/Puppy-Bowl-React/NewPlayerForm' element={<NewPlayerForm />} />
         </Routes>
       </div>
   )

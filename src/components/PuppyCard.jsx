@@ -9,7 +9,7 @@ export default function PuppyCard({player}) {
       <Card.Img variant="top" src={player.imageUrl} />
       <Card.Body>
         <Card.Title>{player.name}</Card.Title>
-        <Button variant="primary" as={Link} to={`/players/${player.id}`}>More Info</Button>
+        <Button variant="primary" as={Link} to={`/Puppy-Bowl-React/players/${player.id}`}>More Info</Button>
       </Card.Body>
     </Card>
   );
@@ -27,8 +27,8 @@ export function SinglePuppyCard({player}) {
                 Status: {player.status} <br />
                 Team: {player.teamId}
         </Card.Text>
-        <Button variant="primary" as={Link} to={`/`}>Return To Roster</Button>
-        <Button variant="primary" as={Link} to={`/`} onClick={()=>{removePlayer(player.id)}}>Remove Player</Button>
+        <Button variant="primary" as={Link} to={`/Puppy-Bowl-React/`}>Return To Roster</Button>
+        <Button variant="primary" as={Link} to={`/Puppy-Bowl-React/`} onClick={()=>{removePlayer(player.id)}}>Remove Player</Button>
       </Card.Body>
     </Card>
   );

@@ -9,10 +9,10 @@ export default function NavBar() {
     <>
       <Navbar bg="dark" data-bs-theme="dark" fixed='top'>
         <Container>
-          <Navbar.Brand as={Link} to='/'>Puppy Bowl</Navbar.Brand>
+          <Navbar.Brand as={Link} to='/Puppy-Bowl-React/'>Puppy Bowl</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link as={Link} to='/' >Home</Nav.Link>
-            <Nav.Link as={Link} to='/NewPlayerForm'>New Player Form</Nav.Link>
+            <Nav.Link as={Link} to='/Puppy-Bowl-React/' >Home</Nav.Link>
+            <Nav.Link as={Link} to='/Puppy-Bowl-React/NewPlayerForm'>New Player Form</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
