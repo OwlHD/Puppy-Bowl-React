@@ -26,6 +26,9 @@ function NewPlayerForm() {
             setButtonDisabled(true)
             console.log(puppyInfo)
             addNewPlayer(puppyInfo)
+            setTimeout(()=>{
+                window.location.reload()
+            },200)
             navigate('/')
         }
     

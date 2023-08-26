@@ -36,6 +36,9 @@ export async function removePlayer(playerId) {
         );
         const result = await response.json();
         console.log(result);
+        setTimeout(()=>{
+            window.location.reload()
+        },200)
     } catch (err) {
         console.error(
             `Trouble removing player #${playerId} from the roster!`,
